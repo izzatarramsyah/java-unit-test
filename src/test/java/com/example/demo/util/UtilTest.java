@@ -10,15 +10,15 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 public class UtilTest {
 
     @Test
-	public final void EncryptTest() {
-        String result = Util.encrypt( "testing" );
-        assertEquals(result, "ov8I2qwjhBhQ6O3ivvjRHw==");
+	public final void AddTest() {
+        int result = Util.add( 1 , 1 );
+        assertEquals(result, 2);
     }
     
     @Test
-	public final void DecryptTest() {
-        String result = Util.decrypt( "ov8I2qwjhBhQ6O3ivvjRHw==" );
-        assertEquals(result, "testing");
+	public final void MinTest() {
+        int result = Util.min( 1 , 1 );
+        assertEquals(result, 0);
     }
     
 }
